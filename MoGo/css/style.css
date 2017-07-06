@@ -486,3 +486,145 @@ header{
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
 }
+
+.comments{
+    height: 290px;
+    background-color: #f8f8f8;
+}
+
+.sliderContainer{
+    height: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.sliderWindow{
+    overflow: hidden;
+    width: 1000px;
+}
+
+.sliderArrow{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.sliderArrow:hover{
+    background-color: #e5e5e5;
+}
+
+.sliderArrow img{
+    margin-top: 140px;
+}
+
+.right img{
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+.left img{
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+
+.sliderWindow{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.slide{
+    min-width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.slide>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.slideImageContainer{
+    height: 100%;
+}
+
+.slideImage{
+    height: 150px;
+    width: 150px;
+    border: 3px solid #95e1d3;
+    text-align: center;
+    margin-top: 70px;
+    margin-right: 60px;
+    margin-left: 20px;
+}
+
+.slideImage img{
+    margin-top: 45px;
+}
+
+.slideInfo{
+    font-family: RobotoI;
+    font-size: 24px;
+    color: #c0c0c0;
+}
+
+.slideInfo:before{
+    content: open-quote;
+}
+
+.slideInfo:after{
+    content: close-quote;
+}
+
+.slideAuthor{
+    font-family: KaushanScript;
+    font-size: 24px;
+    color: #333333;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.slideAuthor:before{
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    vertical-align: middle;
+}
+
+.team{
+    height: 1050px;
+}
+
+.photoTeam{
+    height: 470px;
+}
+
+.photoTeam .photo>img{
+    margin-left: -80px;
+    height: 100%;
+    width: auto;
+}
+
+#michael{
+    margin-left: -150px;
+}
