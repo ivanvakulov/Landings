@@ -1,0 +1,1405 @@
+@font-face {
+    font-family: GothaReg; 
+    src: url(../fonts/GothaProReg.otf); 
+}
+
+@font-face {
+    font-family: GothaBol; 
+    src: url(../fonts/GothaProBol.otf); 
+}
+
+@font-face {
+    font-family: GothaBla; 
+    src: url(../fonts/GothaProBla.otf); 
+}
+
+@font-face {
+    font-family: GothaLig; 
+    src: url(../fonts/GothaProLig.otf); 
+}
+
+body, htnl{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-image: url(../img/headerBack.png);
+    position: relative;
+}
+
+h2{
+    padding-top: 150px;
+    text-transform: uppercase;
+    font-family: GothaBla;
+    font-size: 42px;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+h2:before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 15px;
+    vertical-align: middle;
+    background-color: #00dc71;
+    margin-top: 22px;
+    margin-left: -7px;
+    z-index: 100;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-wrapper>.logo{
+    display: none;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    padding: 35px 0;
+    text-align: center;
+    width: 250px;
+}
+
+.menu-container{
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    background-color: #fff;
+    color: #c1c1c1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: GothaReg;
+    font-size: 14px;
+    z-index: 500;
+}
+
+.items-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu>li{
+    padding: 0 30px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #a7a7a7;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.menu li a:hover{
+    color: #000;
+}
+
+.personal-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.personal .menu>li{
+    padding: 10px 15px;
+}
+
+.personal .menu>li:nth-child(2){
+    padding-right: 30px;
+}
+
+.submenu{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 15px;
+    margin-left: -10px;
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding: 5px;
+    display: none;
+}
+
+.personal .menu>li:nth-child(2):hover .submenu{
+    display: block;
+}
+
+.personal .menu{
+    height: 43px;
+}
+
+.submenu li{
+    padding: 5px 10px;
+}
+
+.drop:after{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/dropArrow.svg);
+    height: 5px;
+    width: 10px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.person:before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/personIcon.svg);
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.personal-button{
+    width: 200px;
+    height: 45px;
+    border: 1px solid #a7a7a7;
+    margin-right: 60px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: GothaBol;
+    line-height: 45px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.personal-button:hover{
+    color: #fff;
+    background-color: #a7a7a7; 
+}
+
+.mac{
+    text-align: center;
+}
+
+.mac>img{
+    margin-top: 150px;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    width: 900px;
+}
+
+.mac-text{
+    margin: auto;
+    width: 700px;
+    margin-top: 270px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: GothaReg;
+    font-size: 20px;
+}
+
+.mac-text h1{
+    font-family: GothaBol;
+    font-size: 42px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.mac-text .about-button{
+    margin: 40px auto;
+    width: 190px;
+    height: 40px;
+}
+
+.social-icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 180px;
+    margin: auto;
+}
+
+#services{
+    height: 770px;
+}
+
+.services-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 85px;
+}
+
+.services-item{
+    width: 360px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.services-item:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0 0 49px rgba(0,0,0,0.03);
+            box-shadow: 0 0 49px rgba(0,0,0,0.03);   
+}
+
+.circle{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    margin-top: -85px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 49px rgba(0,0,0,0.03);
+            box-shadow: 0 0 49px rgba(0,0,0,0.03);
+}
+
+.circle img{
+    width: 60px;
+    margin-top: 60px;
+}
+
+.services-text{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 35px;
+    font-family: GothaLig;
+    font-size: 16px;
+}
+
+#about{
+    height: 980px;
+}
+
+.bottom-image{
+    background-color: #fbfbfb;
+    position: relative;
+}
+
+.bottom-image>img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.about-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;   
+}
+
+.about-photo-container img{
+    margin-top: -30px;
+    height: 1035px;
+}
+
+.about-text-container{
+    padding-left: 150px;
+}
+
+.about-text{
+    width: 480px;
+    font-size: 16px;
+    font-family: GothaLig;
+    line-height: 22px;
+}
+
+.about-button{
+    color: #fff;
+    width: 190px;
+    height: 40px;
+    font-size: 12px;
+    font-family: GothaBol;
+    background-color: #00dc71;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 50px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.about-button:hover{
+    background-color: #00f17c;
+}
+
+#how-it-works{
+    height: 990px;
+}
+
+.drag-container{
+    width: 100%;
+}
+
+.grey{
+    width: 100%;
+    height: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    position: relative;
+    margin: 25px 0;
+}
+
+.green{
+    position: absolute;
+    background-color: #00dc71;
+    border-radius: 10px;
+    height: 100%;
+    width: 0;
+    z-index: 100;
+}
+
+.drag-button{
+    position: absolute;
+    height: 25px;
+    width: 40px;
+    background-color: #fff;
+    border: 1px solid #f9f9f9;
+    margin-top: -5px;
+    left: 0;
+    margin-left: -7px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+#left-drop{
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+#right-drop{
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+
+.min-max{
+    width: 100%;
+    font-family: GothaLig;
+    font-size: 14px;
+    color: #898989;
+}
+
+.left{
+    float: left;
+    text-align: left;
+    width: 250px;
+}
+
+.right{
+    float: right;
+    text-align: right;
+    width: 250px;
+}
+
+.center{
+    text-align: center;
+}
+
+.count-container div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.count-container div>span{
+    display: block;
+}
+
+.count-container div>span:first-child{
+    font-family: GothaLig;
+    font-size: 14px;
+    color: #898989;
+}
+
+.count-bold{
+    font-family: GothaBla;
+    font-size: 30px;
+}
+
+.green-span{
+    color: #00dc71;
+}
+
+#chart_div{
+    margin-top: 80px;
+}
+
+#advantages{
+    background-color: #f8f8f8;
+    height: 640px;
+}
+
+.advantages-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.advantages-item{
+    width: 270px;
+}
+
+.advantages-item .circle{
+    margin-top: 0;
+}
+
+.advantages-item .services-text{
+    width: 100%;
+}
+
+#partners{
+    height: 460px;
+}
+
+#slider-container{
+    width: 1050px;
+    height: 120px;
+    margin: 40px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.slides{
+    background-color: #fff;
+    list-style-type: none;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.slides>li{
+    width: 200px;
+    margin: 0 25px;
+}
+
+.slides>li>img{
+    width: 200px;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.slides>li>img:hover{
+    -webkit-filter: none;
+            filter: none;
+}
+
+.all-slides{
+    width: 1000px;
+    overflow: hidden;
+}
+
+#left svg{
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.slider-arrow{
+    width: 25px;
+    height: 100%;
+    padding-top: 90px;
+}
+
+.slider-arrow svg{
+    cursor: pointer;
+}
+
+.slider-arrow svg:hover path{
+    fill: #00dc71;
+}
+
+#faq{
+    height: 1075px;
+}
+
+.widgetCont{
+    margin-bottom: 25px;
+    margin-right: 25px;
+    width: 550px;
+    height: 70px;
+    overflow-y: hidden;
+    text-align: left;
+}
+
+.row{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.widget{
+    border-radius: 5px;
+    height: 70px;
+    background-color: #fff;
+    font-size: 14px;
+    font-family: GothaLig;
+    padding-left: 55px;
+    padding-right: 20px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.widgetText{
+    width: 400px;    
+}
+
+.widgetInfo{
+    height: 130px;
+    overflow-y: scroll;
+    background-color: #f7f7f7;
+    padding:20px;
+    padding-left: 55px;
+    word-wrap: break-word;
+    font-size: 14px;
+    font-family: GothaLig;
+    color: #898989;
+    line-height: 20px;
+}
+
+.faq-but{
+    width: 140px;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#news{
+    height: 830px;
+}
+
+.news-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.news-item{
+    width: 360px;
+    height: 420px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 49px rgba(0,0,0,0.1);
+    box-shadow: 0 0 49px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.news-item img{
+    width: 100%;
+}
+
+.news-text{
+    padding: 35px 30px;
+    text-align: left;
+}
+
+.news-text h3{
+    font-family: GothaBol;
+    font-size: 15px;
+    margin: 0;
+}
+
+.news-info{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    -webkit-column-width: 200px;
+    column-width: 200px;
+    font-family: GothaLig;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.news-text a{
+    text-decoration: none;
+    font-family: GothaBol;
+    font-size: 12px;
+    color: #ececec;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.news-text a:after{
+    content:"";
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-left: 5px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    background-image: url(../img/dropArrow.svg);
+}
+
+.news-text a:hover{
+    color: #000;
+}
+
+.news-item:hover{
+    margin-top: -20px;
+}
+
+#contacts{
+    height: 585px;
+    background-color: #151515;
+}
+
+.footer-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    padding-top: 120px;
+    font-family: GothaLig;
+    color: #625858;
+    line-height: 25px;
+}
+
+.footer-container h3{
+    color: #fff;
+    font-family: GothaBla;   
+}
+
+.footer-container>div{
+    margin: 0 5px;
+}
+
+.footer-container .social-icons{
+    margin: 0;
+    margin-top: 100px;
+}
+
+.footer-container .logo{
+    width: 180px;
+}
+
+.contacts-container{
+    width: 370px;
+    height: 385px;
+}
+
+.form-container input{
+    width: 260px;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #625858;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #625858;
+    outline: none;
+}
+
+.form-container input:focus{
+    border: 1px solid #625858;
+}
+
+.inputs{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.form-container{
+    height: 385px;
+}
+
+.form-container textarea{
+    resize: none;
+    width: 560px;
+    height: 115px;
+    padding: 15px;
+    border: 1px solid #625858;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 10px 0;
+    color: #625858;
+    outline: none;
+    font-size: 15px;
+}
+
+.form-container .about-button{
+    margin-top: 10px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.contacts-container .social-icons div{
+    border-radius: 5px;
+    text-align: center;
+    width: 40px;
+    padding-top: 5px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.contacts-container .social-icons div:hover{
+    background-color: #625858;
+}
+
+.mob>img{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+@media screen and (max-width:1650px){
+    .menu>li{
+        padding: 15px;
+    }
+    
+    .personal .menu>li{
+        padding: 10px;
+    }
+    
+    .logo{
+        padding-left: 20px;
+        width: auto;
+    }
+    
+    #about{
+        height: 750px;
+    }
+    
+    #services{
+        height: 550px;
+    }
+    
+    #partners{
+        height: 350px;
+    }
+    
+    #faq{
+        height: 900px;
+    }
+    
+    #advantages{
+        height: 500px;
+    }
+    
+    #news{
+        height: 650px;
+    }
+    
+    .about-photo-container img{
+        margin-top: -25px;
+        height: 800px;
+    }
+    
+    .about-text-container{
+        padding-left: 60px;
+    }
+    
+    h2{
+        padding-top: 70px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width:1350px){
+    
+    .menu-wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        z-index: 500;
+    }
+
+    .menu-wrapper>.logo{
+        display: block;
+        margin-right: 20px;
+    }
+    
+    .mob{
+        width: 60px;
+        height: 60px;
+        background-color: #00dc71;
+        border-radius: 5px;
+        margin-left: 20px;
+        position: relative;
+    }
+    
+    .mob img{
+        display: block;
+        width: 60px;
+        position: absolute;
+    }
+    
+    .menu-container{
+        display: block;
+        overflow: hidden;
+        height: 0;
+        background-color: #fff; 
+        position: absolute;
+        margin-top: -20px;
+        margin-left: -20px;
+        text-align: center;
+    }
+    
+    .menu-container .logo{
+        display: none;
+    }
+    
+    .items-container{
+        display: block;
+    }
+    
+    .personal-container{
+        display: block;
+    }
+    
+    .menu{
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .menu>li{
+        display: block;
+    }
+    
+    .personal-button{
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .submenu{
+        margin: 0;
+        left: 50%;
+        width: 50px;
+        margin-left: -25px;
+    }
+    
+    .close{
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 60px;
+        -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        right: 10px;
+        top: 10px;
+        border-radius: 5px;
+    }
+    
+    .close img{
+        width: 60px;
+    }
+    
+}
+
+@media screen and (max-width:1280px){
+    
+    .container{
+        width: 800px;
+    }
+    
+    #about{
+        height: 540px;
+    }
+    
+    .about-photo-container img{
+        margin-top: -15px;
+        height: 570px;
+    }
+
+    .about-text-container{
+        padding-left: 40px;
+    }
+    
+    #partners{
+        height: 300px;
+    }
+    
+    h2{
+        padding-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    #advantages{
+        height: 400px;
+    }
+    
+    .about-button{
+        margin-top: 20px;
+    }
+    
+    .all-slides{
+        width: 750px;
+    }
+    
+    #slider-container{
+        width: 100%;
+    }
+    
+    .slides>li{
+        width: 160px;
+        margin: 0 15px;
+    }
+    
+    .slides>li>img{
+        width: 160px;
+    }
+    
+    .widgetCont{
+        width: 380px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .widgetInfo{
+        height: 100px;
+    }
+    
+    #faq{
+        height: 750px;
+    }
+    
+    .services-text{
+        font-size: 14px;
+    }
+    
+    .about-text{
+        font-size: 12px;
+        width: 420px;
+    }
+    
+    .news-item{
+        width: 240px;
+        height: 360px;
+    }
+    
+    .news-text h3{
+        font-size: 14px;
+    }
+    
+    .news-info{
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    
+    #news{
+        height: 600px;
+    }
+    
+    #how-it-works{
+        height: 700px;
+    }
+    
+    .form-container input{
+        width: 150px;
+    }
+    
+    .form-container textarea{
+        width: 350px;
+        height: 60px;
+    }
+    
+    .footer-container .social-icons{
+        margin-top: 40px;
+    }
+    
+    .mac>img{
+        width: 600px;
+        margin-left: -300px;
+        margin-top: 300px;
+    }
+    
+    .mac-text{
+        width: 500px;
+        margin-top: 360px;
+    }
+    
+    .mac-text h1{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    .mac-text .about-button{
+        margin: 20px auto;
+    }
+    
+    .footer-container .logo{
+        padding-left: 0;
+        width: 150px;
+    }
+    
+    .footer-container{
+        padding-top: 60px;
+    }
+    
+    #contacts{
+        height: 500px;
+    }
+    
+}
+
+@media screen and (max-width:960px){
+    
+    .about-photo-container img{
+        display: none;   
+    }
+    
+    .about-text-container{
+        margin: auto;
+        width: 450px;
+    }
+    
+    #about{
+        height: 560px;
+    }
+    
+    h2{
+        padding-top: 20px;
+    }
+    
+    #services{
+        height: 450px;
+    }
+    
+}
+
+@media screen and (max-width:830px){
+    
+    #how-it-works{
+        height: 800px;
+    }
+    
+    .container{
+        width: 500px;
+    }
+    
+    .services-container{
+        display: block;
+    }
+    
+    .services-item{
+        width: 200px;
+        display: inline-block;   
+        vertical-align: top;
+        margin: 0 15px;
+    }
+    
+    .services-item:last-child{
+        margin-top: 30px;
+    }
+    
+    #services{
+        height: 700px;
+    }
+    
+    .advantages-container{
+        display: block;
+    }
+    
+    .advantages-item{
+        display: inline-block;
+        width: 200px;
+        margin-top: 20px;
+        vertical-align: top;
+    }
+    
+    #advantages{
+        height: 680px;
+    }
+    
+    .slides>li{
+        width: 130px;
+        margin: 0 8px;
+    }
+
+    .slides>li>img{
+        width: 130px;
+    }
+
+    .all-slides{
+        width: 450px;
+    }
+    
+    #slider-container{
+        margin: 10px auto;
+    }
+    
+    #partners{
+        height: 250px;
+    }
+    
+    #faq{
+        height: 1100px;
+    }
+    
+    .news-container{
+        display: block;
+    }
+    
+    .news-item{
+        display: inline-block;
+        width: 220px;
+        margin: 10px;
+        vertical-align: top;
+        margin-bottom: 20px;
+    }
+    
+    #news{
+        height: 900px;
+    }
+    
+    .footer-container{
+        display: block;
+    }
+    
+    .contacts-container{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .footer-container{
+        padding-top: 5px;
+    }
+    
+    #contacts{
+        height: 700px;
+    }
+    
+    .inputs{
+        width: 382px;
+    }
+    
+    .footer-container .logo{
+        display: none;
+    }
+    
+    .min-max{
+        display: none;
+    }
+    
+    .count-container div{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 300px;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width:600px){
+    
+    .container{
+        width: 300px;
+    }
+    
+    h2{
+        font-size: 32px;
+    }
+    
+    h2:before{
+        margin-top: 15px;
+    }
+    
+    #services{
+        height: 1000px;
+    }
+    
+    .services-item{
+        margin-top: 20px;
+    }
+    
+    .about-text{
+        width: 90%;
+        padding: 0;
+    }
+    
+    #faq{
+        height: 1100px;
+    }
+    
+    #about{
+        height: 700px;
+    }
+    
+    #advantages{
+        height: 1150px;
+    }
+    
+    .slides>li{
+        width: 230px;
+        margin: 0 5px;
+    }
+
+    .slides>li>img{
+        width: 230px;
+    }
+
+    .all-slides{
+        width: 240px;
+    }
+    
+    .row{
+        height:  100%;
+    }
+    
+    .widgetCont{
+        width: 300px;
+        margin-right: 0;
+    }
+    
+    .news-item{
+        width: 280px;
+    }
+    
+    #news{
+        height: 1300px;
+    }
+    
+    .mac>img{
+       display: none;
+    }
+    
+    .mac-text{
+        width: 100%;
+        margin-top: 200px;
+    }
+    
+    .contacts-container{
+        height: 270px;
+    }
+    
+    .inputs{
+        display: block;
+        width: 100%;
+    }
+    
+    .form-container input{
+        width: 250px;
+    }
+    
+    .form-container textarea{
+        width: 250px;
+    }
+    
+    #contacts{
+        height: 750px;
+    }
+}
+
+@media screen and (max-width:400px){
+    
+    #about{
+        height: 850px;
+    }
+    
+    .mac-text{
+        width: 90%;
+        margin-top: 200px;
+    }
+}

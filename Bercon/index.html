@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Bercon</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="js/touch.js"></script>
+        <script src="js/plug.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="menu-wrapper">
+                <div class="mob">
+                    <img src="img/menu-gamb.png" alt="menu">
+                    <div class="menu-container">
+                        <div class="close"><img src="img/close.png" alt="x"></div>
+                        <div class="items-container">
+                            <div class="logo"><img src="img/logo.png" alt="logo"></div>
+                            <div class="menu-items">
+                                <ul class="menu">
+                                    <li><a href="#services">Наш портфель</a></li>
+                                    <li><a href="#advantages">Преимущества</a></li>
+                                    <li><a href="#about">О нас</a></li>
+                                    <li><a href="#faq">FAQ</a></li>
+                                    <li><a href="#news">Блог</a></li>
+                                    <li><a href="#how-it-works">Как работает</a></li>
+                                    <li><a href="#contacts">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="personal-container">
+                            <div class="personal">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="" class="person">Личный кабинет</a>
+                                    </li>
+                                    <li>
+                                        <a class="drop">Ru</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Ru</a></li>
+                                            <li><a href="">Eng</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="personal-button">Связатья с нами</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo"><img src="img/logo.png" alt="logo"></div>
+            </div>
+            <div class="mac">
+                <div class="overlay">
+                    <div class="mac-text">
+                        <h1>Инвестируйте</h1>
+                        <span>В технологии будущего</span>
+                        <div class="about-button">Узнать подробности</div>
+                        <div class="social-icons">
+                            <div class="social-items"><a href=""><img src="img/twitter.png" alt="twitter"></a></div>
+                            <div class="social-items"><a href=""><img src="img/facebook.png" alt="facebook"></a></div>
+                            <div class="social-items"><a href=""><img src="img/google.png" alt="google"></a></div>
+                            <div class="social-items"><a href=""><img src="img/youtube.png" alt="youtube"></a></div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/mac.png" alt="mac">
+            </div>
+        </header>
+        
+        <section id="services">
+            <div class="container">
+                <h2>Наш портфель</h2>
+                <div class="services-container">
+                    <div class="services-item">
+                        <div class="circle"><img src="img/micro.png" alt="micro"></div>
+                        <div class="services-text">Техническое оборудование для майнинга</div>
+                    </div>
+                    <div class="services-item">
+                        <div class="circle"><img src="img/download.png" alt="download"></div>
+                        <div class="services-text">Активы крупных и надежных компаний которые на технологии blockchain</div>
+                    </div>
+                    <div class="services-item">
+                        <div class="circle"><img src="img/dollar.png" alt="dollar"></div>
+                        <div class="services-text">Трейдинг и арбитражная торговля на самых известных криптовалютных ресурсах</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="bottom-image">
+            <div class="overlay about-container">
+                <div class="about-photo-container">
+                    <img src="img/aboutPhoto.png" alt="people">
+                </div>
+                <div class="about-text-container">
+                    <h2>О нас</h2>
+                    <div class="about-text">
+                        В первую очередь работа фонда заключается в идеологии децентрализованного и открытого реестра, базы данных, которая обеспечивает абсолютную прозрачность и уникальность всех транзакций для обмена информацией и т.д. Такой вид операций позволяет создавать масштабные учетные функции, финансовые операции без комиссий, что в будущем позволит сосем заменить традиционные системы управления.
+                        <br>
+                        <br>
+                        Важную роль, в развитии данной технологии, отыгрывают криптовалюты, так как они работают в полной открытости, прозрачности, децентрализованности.
+                        Децентрализованность поддерживается большой сетью майнеров по всему миру, которые задействуют все мощности своих компьютеров на поддержание транзакций сети, при этом добывая криптовалюту.
+                        Qbercon - разработка различных моделей управления на технологии blockchain и анализ финансового рынка криптовалют.
+                    </div>
+                    <div class="about-button">Узнать подробности</div>
+                </div>
+            </div>
+            <img src="img/aboutBack.png" alt="background">
+        </section>
+        
+        <section id="how-it-works">
+            <div class="container">
+                <h2>График роста</h2>
+                
+                <div class="drag-container">
+                    <div class="count-container">
+                        <div class="left">
+                            <span>Ваши инвестиции <span class="green-span"><span id="from-usd">0.00</span> USD</span></span>
+                            <span class="count-bold"><span id="from">0.00</span> BTC</span>
+                        </div>
+                        <div class="center">
+                            <span>Текущий процент</span>
+                            <span class="count-bold">25%</span>
+                        </div>
+                        <div class="right">
+                            <span>К получению <span class="green-span"><span id="to-usd">0.00</span> USD</span></span>
+                            <span class="count-bold"><span id="to">0.00</span> BTC</span>
+                        </div>
+                    </div>
+                    <div class="grey">
+                        <div class="green"></div>
+                        <biv class="drag-button">
+                            <img src="img/dropArrow.svg" alt="arrow" id="left-drop">
+                            <img src="img/dropArrow.svg" alt="arrow" id="right-drop">
+                        </biv>
+                    </div>
+                    <div class="min-max">
+                        <span class="left">
+                           Минимум 0.01 BTC 
+                        </span>
+                        <span class="right">
+                            Максимум
+                        </span>
+                    </div>
+                </div>
+                
+                <div id="chart_div"></div>
+                
+            </div>
+        </section>
+        
+        <section id="advantages" class="bottom-image">
+            <div class="overlay">
+                <div class="container">
+                    <h2>Наши преимущества</h2>
+                    <div class="advantages-container">
+                        <div class="advantages-item">
+                            <div class="circle"><img src="img/microGreen.png" alt="micro"></div>
+                            <div class="services-text">Прозрачность</div>
+                        </div>
+                        <div class="advantages-item">
+                            <div class="circle"><img src="img/download.png" alt="comp"></div>
+                            <div class="services-text">Надежность</div>
+                        </div>
+                        <div class="advantages-item">
+                            <div class="circle"><img src="img/dollarGreen.png" alt="dollar"></div>
+                            <div class="services-text">Профессиональная команда</div>
+                        </div>
+                        <div class="advantages-item">
+                            <div class="circle"><img src="img/dollarGreen.png" alt="dollar"></div>
+                            <div class="services-text">Технологии будущего</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="img/advantagesBack.png" alt="background">
+        </section>
+        
+        <section id="partners">
+            <div class="container">
+                <h2>Наши партнеры</h2>
+                <div id="slider-container" >
+                    <div class="slider-arrow" id="left">
+                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="9px" height="15px" viewBox="0 0 9 15" enable-background="new 0 0 9 15" xml:space="preserve">
+                            <g>
+                                <path fill="#C8DDE5" d="M8.845,7.844l-7.206,6.97c-0.092,0.089-0.232,0.15-0.356,0.15s-0.263-0.06-0.356-0.15l-0.773-0.748
+                                                        C0.062,13.976,0,13.856,0,13.722c0-0.12,0.062-0.255,0.155-0.344L6.232,7.5L0.155,1.622C0.062,1.533,0,1.398,0,1.278
+                                                        s0.062-0.255,0.155-0.344l0.773-0.748c0.092-0.089,0.232-0.15,0.356-0.15s0.263,0.06,0.356,0.15l7.206,6.97
+                                                        C8.938,7.245,9,7.38,9,7.5S8.938,7.755,8.845,7.844z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="all-slides">
+                        <ul class="slides">
+                            <li><img src="img/kuna.png" alt="kuna"></li>
+                            <li><img src="img/cubits.svg" alt="cubits"></li>
+                            <li><img src="img/forklog.svg" alt="forklog"></li>
+                            <li><img src="img/ambisafe.png" alt="ambisafe"></li>
+                            <li><img src="img/kuna.png" alt="kuna"></li>
+                            <li><img src="img/cubits.svg" alt="cubits"></li>
+                            <li><img src="img/forklog.svg" alt="forklog"></li>
+                            <li><img src="img/ambisafe.png" alt="ambisafe"></li>
+                        </ul>
+                    </div>
+                    <div class="slider-arrow" id="right">
+                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="9px" height="15px" viewBox="0 0 9 15" enable-background="new 0 0 9 15" xml:space="preserve">
+                            <g>
+                                <path fill="#C8DDE5" d="M8.845,7.844l-7.206,6.97c-0.092,0.089-0.232,0.15-0.356,0.15s-0.263-0.06-0.356-0.15l-0.773-0.748
+                                                        C0.062,13.976,0,13.856,0,13.722c0-0.12,0.062-0.255,0.155-0.344L6.232,7.5L0.155,1.622C0.062,1.533,0,1.398,0,1.278
+                                                        s0.062-0.255,0.155-0.344l0.773-0.748c0.092-0.089,0.232-0.15,0.356-0.15s0.263,0.06,0.356,0.15l7.206,6.97
+                                                        C8.938,7.245,9,7.38,9,7.5S8.938,7.755,8.845,7.844z"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq" class="bottom-image">
+            <div class="overlay">
+                <div class="container">
+                    <h2>Вопросы и ответы</h2>
+                        <div class="widgets">
+                            <div class="row">
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>Что такое Bitcoin?</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                    </div>
+                                </div>
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>Как узнать мой адрес кошелька?</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit ame
+                                    </div>
+                                </div>
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>Почему постоянно меняется мой адрес кошелька?</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                    </div>
+                                </div> 
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>Деньги не пришли на счет, что делать?</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                    </div>
+                                </div>
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>Я не получил письмо с подтверждением регистрации или
+                                            изменения пароля, что делать?</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit ame
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>Я забыл пароль, что делать?</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                    </div>
+                                </div>
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>2FA выдаёт сообщение "Неверный код".</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit ame
+                                    </div>
+                                </div>
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>Что такое автореинвест?</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                    </div>
+                                </div> 
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>Берет ли #bitup комиссии?</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                    </div>
+                                </div>
+                                <div class="widgetCont">
+                                    <div class="widget">
+                                        <div class="widgetText"><span>Почему я не получаю дополнительный доход по
+                                            реферальной программе?</span></div>
+                                        <div class="arrow"><img src="img/dropArrow.svg" alt="arrow"></div>
+                                    </div>
+                                    <div class="widgetInfo">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit ame
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    <div class="about-button faq-but">Все вопросы</div>                                    
+                </div>
+            </div>
+            <img src="img/aboutBack.png" alt="background">
+        </section>
+        
+        <section id="news">
+            <div class="container">
+                <h2>Новости</h2>
+                <div class="news-container">
+                    <div class="news-item">
+                        <img src="img/news1.png" alt="mews1">
+                        <div class="news-text">
+                            <h3>Принцип восприятия непредвзято создает паллиативный интеллект</h3>
+                            <div class="news-info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit ame
+                            </div>
+                            <a href="">Читать далее...</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="img/news2.png" alt="mews1">
+                        <div class="news-text">
+                            <h3>Принцип восприятия непредвзято создает паллиативный интеллект</h3>
+                            <div class="news-info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit ame
+                            </div>
+                            <a href="">Читать далее...</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="img/news3.png" alt="mews1">
+                        <div class="news-text">
+                            <h3>Принцип восприятия непредвзято создает паллиативный интеллект</h3>
+                            <div class="news-info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit ame
+                            </div>
+                            <a href="">Читать далее...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <footer id="contacts" class="bottom-image">
+            <div class="overlay">
+                <div class="container">
+                    <div class="footer-container">
+                        <div class="logo"><img src="img/footerLogo.png" alt="logo"></div>
+                        <div class="contacts-container">
+                            <h3>Наши контакты</h3>
+                            <div class="contacts">
+                                Qbercon г. Лондон ул. Перси-стрит, 5, Великобритания
+                                <br><br>
+                                E-mail: support@info.com
+                                <br><br>
+                                Телефон: 1-888-659-8244
+                            </div>
+                            <div class="social-icons">
+                                <div class="social-items"><a href=""><img src="img/twitter.png" alt="twitter"></a></div>
+                                <div class="social-items"><a href=""><img src="img/facebook.png" alt="facebook"></a></div>
+                                <div class="social-items"><a href=""><img src="img/google.png" alt="google"></a></div>
+                                <div class="social-items"><a href=""><img src="img/youtube.png" alt="youtube"></a></div>
+                            </div>
+                        </div>
+                        <div class="form-container">
+                            <h3>Есть вопросы?</h3>
+                            <div class="form-text">
+                                Оставьте его здесь и вскорее с Вами свяжется команда Qbercon
+                            </div>
+                            <form action="">
+                                <div class="inputs">
+                                    <input type="text" placeholder="Ваше имя">
+                                    <input type="text" placeholder="E-mail">    
+                                </div>
+                                <textarea name="" id="" placeholder="Сообщение"></textarea>
+                                <div class="about-button">Отправить</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="img/footerBack.png" alt="background">
+        </footer>
+    </body>
+</html>
